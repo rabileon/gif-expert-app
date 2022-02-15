@@ -5,7 +5,7 @@ export const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+    setInputValue(e.target.value.toUpperCase());
   };
 
   const handleSubmit = (e) => {
@@ -19,7 +19,12 @@ export const AddCategory = ({ setCategories }) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={inputValue} onChange={handleInputChange} />
+        <input
+          type="text"
+          value={inputValue}
+          onChange={handleInputChange}
+          placeholder="Busca un gif, escribe cualquier palabra y presiona enter"
+        />
       </form>
     </>
   );

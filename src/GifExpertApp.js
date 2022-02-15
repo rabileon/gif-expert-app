@@ -3,7 +3,7 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
-  const [categories, setCategories] = useState(['pokemon']);
+  const [categories, setCategories] = useState(['TRENDING']);
 
   //   const handleAdd = () => {
   //     // setCategories(['HunterXHunter', ...categories]);
@@ -11,7 +11,7 @@ export const GifExpertApp = () => {
   //   };
   return (
     <>
-      <h2>GifExpertApp</h2>
+      <h1 className="title-app">Gif Expert App</h1>
       <AddCategory setCategories={setCategories} />
       <hr />
       {/* <button onClick={handleAdd}> Agregar</button> */}

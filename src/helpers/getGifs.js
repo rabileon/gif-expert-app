@@ -1,8 +1,8 @@
 export const getGifs = async (category) => {
   let url = 'https://api.giphy.com/v1/gifs/';
-  let limit = 'limit=24';
+  let limit = 'limit=15';
   let apiKey = 'api_key=yQakWTddPvTxRs0ld2SAyuTcQWkxreLb';
-  debugger;
+
   if (category.toUpperCase() == 'TRENDING') {
     url = `${url}trending?${limit}&${apiKey}`;
   } else {

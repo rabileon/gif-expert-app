@@ -6,6 +6,7 @@ export const AddCategory = ({ setCategories }) => {
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value.toUpperCase());
+    console.log('HandleInpñutChange llamado');
   };
 
   const handleSubmit = (e) => {
